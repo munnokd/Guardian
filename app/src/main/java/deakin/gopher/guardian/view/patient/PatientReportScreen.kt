@@ -2,7 +2,6 @@
 
 package deakin.gopher.guardian
 
-import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -58,7 +57,7 @@ fun PatientReportScreen(navController: NavHostController) {
             status = "Need medication",
             statusColor = Color.Red,
             background = Color(0xFFFFEBEE),
-            onClick = { navController.navigate("patient_prescriptions/patient_williams/${Uri.encode("Williams S")}") }
+            onClick = { navController.navigate("medical_summary") }
         )
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -70,7 +69,7 @@ fun PatientReportScreen(navController: NavHostController) {
             status = "No Issues",
             statusColor = Color(0xFF4CAF50),
             background = Color(0xFFE3F2FD),
-            onClick = { navController.navigate("patient_prescriptions/patient_norah/${Uri.encode("Norah P")}") }
+            onClick = { /* navController.navigate("medical_summary") */ }
         )
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -82,7 +81,7 @@ fun PatientReportScreen(navController: NavHostController) {
             status = "No Issues",
             statusColor = Color(0xFF4CAF50),
             background = Color(0xFFE3F2FD),
-            onClick = { navController.navigate("patient_prescriptions/patient_serah/${Uri.encode("Serah S")}") }
+            onClick = { /* navController.navigate("medical_summary") */ }
         )
     }
 }
